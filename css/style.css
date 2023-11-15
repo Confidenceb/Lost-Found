@@ -114,6 +114,21 @@ MEDIUM: 11PX
   border-bottom: 3px solid #fff;
 }
 
+.btn-primary {
+  background-color: #fff;
+  color: #fa6700;
+  border: none;
+  font-size: 1.46rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  color: #e15d00;
+  background-color: #fff !important;
+}
+
 /* Mobile */
 .btn-mobile-nav {
   background: none;

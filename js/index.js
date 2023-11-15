@@ -5,6 +5,11 @@ const slides = document.querySelectorAll(".slide");
 const btnRight = document.querySelector(".right");
 const btnLeft = document.querySelector(".left");
 
+const btnEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
 const navItem = document.querySelectorAll(".nav-items");
 
 console.log(navItem);
@@ -62,3 +67,26 @@ navItem.forEach((nav) => {
 });
 
 // addEventListener('mouseover')
+
+//////////////////////////////////////
+// Sticky nav
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-90px",
+  }
+);
+
+observer.observe(sectionHeroEl);

@@ -21,10 +21,7 @@ PARAGRAPH DEFAULT:1.6
 --- 02 COLOUR SYSTEM
 
 - PRIMARY: #FA6700
-- TINT: 
-#005246
-#C4FCF0
-#4C8077
+- TINT:
 
 
 - SHADES:
@@ -315,4 +312,196 @@ MEDIUM: 11PX
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-evenly;
+  gap: 2.4rem;
+
+  font-size: 1.6rem;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-submit {
+  background-color: #fa6700;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: #e15d00;
+}
+
+/* ********************** */
+/* Testimonial */
+/* ********************** */
+
+.section-testimonial {
+  max-width: 108rem;
+  margin: 0 auto;
+}
+
+.testimonial-header {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  margin-bottom: 3.2rem;
+}
+
+.testimonial {
+  background-color: #fa6700;
+  padding: 2.4rem !important;
+  border-radius: 10px;
+
+  max-width: 108rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.testimonial-text {
+  grid-column: 2 / -1;
+}
+
+.testimonial-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.header-testimonial {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.testimonial-text blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: #fed1b3;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-author {
+  font-size: 1.6rem;
+  color: #fdb380;
+}
+
+/**********************/
+/* FOOTER */
+/**********************/
+.footer {
+  padding-top: 12.8rem;
+  border-top: 1px solid rgba(136, 136, 136, 0.349);
+}
+
+.footer-container {
+  /* margin: 0 9.6rem 9.6rem 9.6rem; */
+  max-width: 96rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.footer--grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  column-gap: 6.4rem;
+}
+
+.header-footer {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.footer-logo a {
+  margin-bottom: 3.2rem;
+  text-decoration: none;
+  display: block;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+
+  color: #fa6700;
+}
+
+.footer-lost {
+  font-weight: 900;
+}
+.footer-found {
+  font-weight: 900;
+  background-color: #fa6700;
+  color: #fff;
+  padding: 0.2rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #767676;
+}
+
+.contact {
+  font-style: normal;
+}
+
+.address {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+  color: #767676;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #333;
+}
+
+.donation-text {
+  font-size: 1.4rem;
+  color: #767676;
+}
+
+.donation-btn {
+  background-color: red;
+  color: #fff;
+  padding: 0.5rem 3rem;
+  font-size: 1.4rem;
+}
+
+.donation-btn:hover,
+.donation-btn:active {
+  background-color: rgb(223, 0, 0);
+  color: #fff;
 }

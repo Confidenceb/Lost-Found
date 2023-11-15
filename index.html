@@ -34,10 +34,61 @@
         <ul class="main-nav">
           <!-- <li><a href="#" class="nav-item active--nav-item">HOME</a></li> -->
           <li><a href="#" class="nav-items">HOME</a></li>
-          <li><a href="#" class="nav-items">FEATURE</a></li>
+          \
           <li><a href="#" class="nav-items">ABOUT US</a></li>
-          <li><a href="#" class="nav-items">TESTIMONIAL</a></li>
-          <li><a href="#" class="nav-items">CONTACT US</a></li>
+          <li><a href="#testimonial" class="nav-items">TESTIMONIAL</a></li>
+          <!-- <li><a href="#" class="nav-items">CONTACT US</a></li> -->
+          <li>
+            <a href="#" class="nav-items">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Contact Us
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Modal title
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <!-- <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -170,29 +221,112 @@
               <div class="found-item-form">
                 <form class="form">
                   <div>
-                    <label for="item-name">Name</label>
-                    <input type="text" required id="item-name" />
+                    <label class="form-label" for="item-name">Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-name"
+                      placeholder="e.g NIN"
+                    />
                   </div>
                   <div>
-                    <label for="item-name">Name</label>
-                    <input type="text" required id="item-name" />
+                    <label for="date-found" class="form-label">Date</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      required
+                      id="date-found"
+                    />
                   </div>
                   <div>
-                    <label for="item-name">Name</label>
-                    <input type="text" required id="item-name" />
+                    <label class="form-label" for="inputGroupSelect04"
+                      >Choose from the Categories</label
+                    >
+                    <div class="input-group">
+                      <select
+                        class="form-input"
+                        class="form-select"
+                        id="inputGroupSelect04"
+                        aria-label="Choose categories of item"
+                      >
+                        <option selected>Choose...</option>
+                        <option value="Pet">Animals / Pet</option>
+                        <option value="Pet">Bags</option>
+                        <option value="Pet">Clothings</option>
+                        <option value="Pet">Collectors Item</option>
+                        <option value="Pet">Money</option>
+                        <option value="Pet">Documents</option>
+                        <option value="ID Card">ID Card</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Gadgets">Personal Accessories</option>
+                        <option value="Gadgets">Ticket</option>
+                        <option value="Gadgets">Toys</option>
+                        <option value="Wallets">Wallets</option>
+                      </select>
+                    </div>
                   </div>
                   <div>
-                    <label for="item-name">Name</label>
-                    <input type="text" required id="item-name" />
+                    <label class="form-label" for="item-brand">Brand</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-brand"
+                      placeholder="e.g Iphone, Gucci"
+                    />
                   </div>
                   <div>
-                    <label for="item-name">Name</label>
-                    <input type="text" required id="item-name" />
+                    <div>
+                      <label for="formFile" class="form-label"
+                        >Choose item image</label
+                      >
+                      <input
+                        class="form-input"
+                        class="form-control"
+                        type="file"
+                        id="formFile"
+                      />
+                    </div>
                   </div>
                   <div>
-                    <label for="item-name">Name</label>
-                    <input type="text" required id="item-name" />
+                    <label for="exampleDataList" class="form-label"
+                      >Location</label
+                    >
+                    <input
+                      class="form-input"
+                      class="form-control"
+                      list="datalistOptions"
+                      id="exampleDataList"
+                      placeholder="Choose one of the three"
+                    />
+                    <datalist id="datalistOptions">
+                      <option value="Idi Oro">Idi Oro</option>
+                      <option value="Fadeyi">Fadeyi</option>
+                      <option value="Ilupeju">Ilupeju</option>
+                    </datalist>
                   </div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label class="form-label" for="item-colour"
+                      >Primary Colour of Item</label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-colour"
+                      placeholder="e.g Green, Yellow"
+                    />
+                  </div>
+                  <button class="btn-submit">Submit</button>
                 </form>
               </div>
             </div>
@@ -202,15 +336,203 @@
               role="tabpanel"
               aria-labelledby="pills-profile-tab"
             >
-              I lost this item on sunday
+              <form class="form">
+                <div>
+                  <label class="form-label" for="item-name">Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    required
+                    id="item-name"
+                    placeholder="e.g NIN"
+                  />
+                </div>
+                <div>
+                  <label for="date-found" class="form-label">Date</label>
+                  <input
+                    class="form-input"
+                    type="date"
+                    required
+                    id="date-found"
+                  />
+                </div>
+                <div>
+                  <label class="form-label" for="inputGroupSelect04"
+                    >Choose from the Categories</label
+                  >
+                  <div class="input-group">
+                    <select
+                      class="form-input"
+                      class="form-select"
+                      id="inputGroupSelect04"
+                      aria-label="Choose categories of item"
+                    >
+                      <option selected>Choose...</option>
+                      <option value="Pet">Animals / Pet</option>
+                      <option value="Pet">Bags</option>
+                      <option value="Pet">Clothings</option>
+                      <option value="Pet">Collectors Item</option>
+                      <option value="Pet">Money</option>
+                      <option value="Pet">Documents</option>
+                      <option value="ID Card">ID Card</option>
+                      <option value="Electronics">Electronics</option>
+                      <option value="Gadgets">Personal Accessories</option>
+                      <option value="Gadgets">Ticket</option>
+                      <option value="Gadgets">Toys</option>
+                      <option value="Wallets">Wallets</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label class="form-label" for="item-brand">Brand</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    required
+                    id="item-brand"
+                    placeholder="e.g Iphone, Gucci"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <label for="formFile" class="form-label"
+                      >Choose item image</label
+                    >
+                    <input
+                      class="form-input"
+                      class="form-control"
+                      type="file"
+                      id="formFile"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="exampleDataList" class="form-label"
+                    >Location</label
+                  >
+                  <input
+                    class="form-input"
+                    class="form-control"
+                    list="datalistOptions"
+                    id="exampleDataList"
+                    placeholder="Choose one of the three"
+                  />
+                  <datalist id="datalistOptions">
+                    <option value="Idi Oro">Idi Oro</option>
+                    <option value="Fadeyi">Fadeyi</option>
+                    <option value="Ilupeju">Ilupeju</option>
+                  </datalist>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+                <div>
+                  <label class="form-label" for="item-colour"
+                    >Primary Colour of Item</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    required
+                    id="item-colour"
+                    placeholder="e.g Green, Yellow"
+                  />
+                </div>
+                <button class="btn-submit">Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
-      <!-- 
-      <section class="section section-found">Found</section>
-      <section class="section section-testimonial">Testimonial</section> -->
+      <section id="testimonial" class="section-testimonial">
+        <div class="testimonial-header">Testimonials</div>
+        <div class="testimonial">
+          <div class="testimonial-img">
+            <img
+              class="testimonial-img"
+              src="img/customers.jpg"
+              alt="Two ladies sitting on a chair talking and smiling"
+            />
+          </div>
+          <div class="testimonial-text">
+            <h2 class="header-testimonial">"Thanks to Lost & Found 🙌👏"</h2>
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              repellat at, nesciunt quia cum minima ipsum culpa totam sapiente
+              recusandae earum debitis doloribus in quasi voluptatibus!
+            </blockquote>
+            <p class="testimonial-author">&mdash; Olayiwola Testimony</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- <footer class="section section-footer">Footer</footer> -->
+    <footer class="footer">
+      <div class="footer-container footer--grid">
+        <div class="logo-col">
+          <div class="footer-logo">
+            <a href="#">
+              <div>
+                <span class="footer-lost">Lost & </span>
+                <span class="footer-found">Found</span>
+              </div>
+            </a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Lost & Found. All right reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <h3 class="header-footer">Contact US</h3>
+          <address class="contact">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a href="tel:09136936326" class="footer-link">09136936326</a>
+            </p>
+            <p>
+              <a href="mailto:hello@lost&found.com" class="footer-link">
+                hello@lost&found.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <h3 class="header-footer">Account</h3>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">Create account</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Sign in</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">IOS app</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Android app</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <h3 class="header-footer">Donation</h3>
+          <ul class="footer-nav">
+            <p class="donation-text">
+              Help donate 🤝 if you want the progress of our project
+            </p>
+            <li>
+              <a class="footer-link" href="#">
+                <button class="btn donation-btn">Donate</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

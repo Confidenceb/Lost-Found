@@ -1,0 +1,31 @@
+/* *:focus {
+  outline: red;
+  box-shadow: 0 0 0 0.4rem rgb(254, 209, 179);
+} */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: "inter", sans-serif; */
+  font-family: "Urbanist", sans-serif;
+  color: #343a40;
+  border-bottom: 9px solid #fa6700;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+
+  transition: all 0.5s;
+}
+
+.section {
+  max-width: 108rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.section:first-child {
+  max-width: 116rem;
+}

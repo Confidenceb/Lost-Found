@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found &mdash; Your Lost and Found Hub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script src="js/bootstrap.js" async></script>
+    <script src="js/index.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <div>
+            <span class="lost">Lost & </span> <span class="found">Found</span>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-container">
+        <ul class="main-nav">
+          <!-- <li><a href="#" class="nav-item active--nav-item">HOME</a></li> -->
+          <li><a href="#" class="nav-items">HOME</a></li>
+          <li><a href="#" class="nav-items">FEATURE</a></li>
+          <li><a href="#" class="nav-items">ABOUT US</a></li>
+          <li><a href="#" class="nav-items">TESTIMONIAL</a></li>
+          <li><a href="#" class="nav-items">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <!-- <img
+          src="icons/icons-menu.png"
+          alt="menu icon"
+          class="icon-mobile-nav open-icon"
+        /> -->
+        <!-- <img
+          src="icons/icons-close.png"
+          alt="close menu icon"
+          class="icon-mobile-nav close-icon"
+        /> -->
+      </button>
+    </header>
+    <main>
+      <section class="section section-hero">
+        <div class="hero-text-field">
+          <h1 class="h1 header-primary">
+            <div>
+              Welcome to
+              <span class="hero-lost">Lost & </span>
+              <span class="hero-found">Found</span>
+            </div>
+            &dash; Your Lost and <br />
+            Found Hub
+          </h1>
+        </div>
+        <div class="hero-img-field">
+          <div>
+            <div class="hero-slide">
+              <div class="carousel-container">
+                <div class="slide slide-1">
+                  <div class="carousel--img-box">
+                    <img
+                      src="img/hero-img-1.jpg"
+                      class="carousel-img"
+                      alt="customer-img"
+                    />
+                    <div class="hero-text">
+                      How can you find your ID card in this crowd?
+                    </div>
+                  </div>
+                </div>
+                <div class="slide slide-2">
+                  <div class="carousel--img-box">
+                    <img
+                      src="img/hero-img-1.jpg"
+                      class="carousel-img"
+                      alt="customer-img"
+                    />
+                    <div class="hero-text">
+                      How can you find you ID card in this crowd?
+                    </div>
+                  </div>
+                </div>
+                <div class="slide slide-3">
+                  <div class="carousel--img-box">
+                    <img
+                      src="img/hero-img-1.jpg"
+                      class="carousel-img"
+                      alt="customer-img"
+                    />
+                    <div class="hero-text">
+                      How can you find you ID card in this crowd?
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arrow-container">
+                <button class="arrow left">
+                  <div class="btn--left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                </button>
+                <button class="arrow right">
+                  <div class="btn--right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-lost">
+        <div class="tabbed-container">
+          <div class="tabb-list">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Report a <span>Found</span> item
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Report a <span>Lost</span> item
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="found-item-form">
+                <form class="form">
+                  <div>
+                    <label for="item-name">Name</label>
+                    <input type="text" required id="item-name" />
+                  </div>
+                  <div>
+                    <label for="item-name">Name</label>
+                    <input type="text" required id="item-name" />
+                  </div>
+                  <div>
+                    <label for="item-name">Name</label>
+                    <input type="text" required id="item-name" />
+                  </div>
+                  <div>
+                    <label for="item-name">Name</label>
+                    <input type="text" required id="item-name" />
+                  </div>
+                  <div>
+                    <label for="item-name">Name</label>
+                    <input type="text" required id="item-name" />
+                  </div>
+                  <div>
+                    <label for="item-name">Name</label>
+                    <input type="text" required id="item-name" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              I lost this item on sunday
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      <section class="section section-found">Found</section>
+      <section class="section section-testimonial">Testimonial</section> -->
+    </main>
+    <!-- <footer class="section section-footer">Footer</footer> -->
+  </body>
+</html>

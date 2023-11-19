@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 2.4rem;
 }
 
 .btn-container {
@@ -24,6 +26,8 @@
   background-color: #fff;
   border: none;
   font-size: 1.4rem;
+  font-weight: 600;
+  /* letter-spacing: 0.5px; */
   padding: 0.5rem 1rem;
   text-transform: capitalize;
 }
@@ -51,4 +55,40 @@
 .contact-btn:hover,
 .contact-btn:active {
   color: #e15d00;
+}
+
+.details-header {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.details-line {
+  border-top: 3px solid #fa6700;
+  opacity: 1;
+  margin: 1rem 0 2rem 0;
+}
+
+.details,
+.location-details {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.details span,
+.location-details span {
+  font-weight: 500;
+}
+
+.details div:last-child {
+  margin-bottom: 2.4rem;
+}
+
+/* .location-details{
+  font-size: 1.4rem;
+  font-weight: 600;
+} */
+
+.found-list {
+  margin-bottom: 4.8rem;
 }

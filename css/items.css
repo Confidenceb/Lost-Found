@@ -49,11 +49,20 @@
   font-size: 1.6rem;
 }
 
+td {
+  color: #555 !important;
+}
+
 .table-striped > tbody > tr:nth-of-type(odd) > * {
   /* background-color: rgba(0, 0, 0, 0.0001) !important; */
   margin-bottom: 1rem;
 }
 
 .table > :not(caption) > * > * {
-  padding: 1.6rem;
+  padding: 1.2rem;
+}
+
+.found-item-table-link,
+.lost-item-table-link {
+  text-decoration: none;
 }

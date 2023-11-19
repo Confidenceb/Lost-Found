@@ -1,0 +1,54 @@
+.section {
+  margin-top: 9.6rem;
+}
+
+.listing-info-box {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #fa6700;
+  /* background-color: green; */
+  color: #fff;
+  padding: 1rem 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.listing-btn {
+  background-color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+
+.claim-btn {
+  /* background-color: #03a34d; */
+  background-color: #198754;
+  color: #fff;
+  transition: all 0.5s;
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+
+.claim-btn:hover,
+.claim-btn:active {
+  background-color: #17804f;
+}
+
+.contact-btn {
+  background-color: #fff;
+  color: #fa6700;
+  transition: all 0.5s;
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+
+.contact-btn:hover,
+.contact-btn:active {
+  color: #e15d00;
+}

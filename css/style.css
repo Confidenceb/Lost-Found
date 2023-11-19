@@ -104,6 +104,7 @@ MEDIUM: 11PX
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 600;
+  text-transform: uppercase;
   padding: 1rem;
   color: #fff;
   transition: all 0.1s;
@@ -111,7 +112,23 @@ MEDIUM: 11PX
 
 .active {
   transition: all 0.1s;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.modal-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fa6700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.modal-label {
+  color: #555;
+}
+
+.modal-footer {
+  border: none;
 }
 
 .btn-primary {
@@ -121,6 +138,11 @@ MEDIUM: 11PX
   font-size: 1.46rem;
   font-weight: 600;
   text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-primary:first-child {
+  margin-right: 2rem;
 }
 
 .btn-primary:hover,
@@ -140,10 +162,6 @@ MEDIUM: 11PX
   width: 2.8rem;
   height: 2.8rem;
   color: #222;
-}
-
-.close-icon {
-  display: none;
 }
 
 /* STICKY NAVIGATION */
@@ -167,10 +185,11 @@ MEDIUM: 11PX
 
 .section-hero {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.3fr;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+
+  height: 80vh;
 }
 
 .header-primary {
@@ -301,6 +320,7 @@ MEDIUM: 11PX
   color: #fa6700;
   transition: all 0.5s;
 }
+
 .nav-link:hover,
 .nav-link:active {
   color: #222;
@@ -309,12 +329,14 @@ MEDIUM: 11PX
 .nav-link.active {
   background-color: #fa6700 !important;
   color: #fff !important;
-
-  padding: 10px 100px;
 }
 .nav-pills {
   justify-content: space-around;
   align-items: center;
+}
+
+.nav-pills .nav-link {
+  padding: 1rem 6rem;
 }
 
 .tab-pane {
@@ -329,11 +351,12 @@ MEDIUM: 11PX
   justify-content: space-evenly;
   gap: 2.4rem;
 
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .form-label {
   display: block;
+  font-size: 1.8rem;
 }
 
 .form-input {
@@ -364,6 +387,7 @@ MEDIUM: 11PX
 .section-testimonial {
   max-width: 108rem;
   margin: 0 auto;
+  padding: 9.6rem 0;
 }
 
 .testimonial-header {
@@ -374,10 +398,14 @@ MEDIUM: 11PX
   margin-bottom: 3.2rem;
 }
 
+.testimonial-slide {
+  position: relative;
+  overflow: hidden;
+}
+
 .testimonial {
   background-color: #fa6700;
   padding: 2.4rem !important;
-  border-radius: 10px;
 
   max-width: 108rem;
   margin: 0 auto;
@@ -394,7 +422,6 @@ MEDIUM: 11PX
 
 .testimonial-img {
   width: 100%;
-  border-radius: 10px;
 }
 
 .header-testimonial {

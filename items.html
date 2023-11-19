@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found &mdash; Lost and Found Items</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/items.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script src="js/bootstrap.js" async></script>
+    <!-- <script src="js/index.js" async></script> -->
+    <script src="js/items.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <div>
+            <span class="lost">Lost & </span> <span class="found">Found</span>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-container">
+        <ul class="main-nav">
+          <!-- <li><a href="#" class="nav-item active--nav-item">HOME</a></li> -->
+          <li>
+            <a href="index.html" class="nav-items">
+              HOME
+              <!-- <i class="fa-solid fa-house"></i> &nbsp; Home -->
+            </a>
+          </li>
+
+          <li><a href="#" class="nav-items">ABOUT US</a></li>
+          <li>
+            <a href="index.html#testimonial" class="nav-items">TESTIMONIAL</a>
+          </li>
+          <li><a href="#" class="nav-items">Search items</a></li>
+          <!-- <li>
+            <a
+              class="nav-links nav-items dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Contact us</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+          <!-- <li>
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Contact Us
+              </button>
+
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Contact Us
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div>
+                          <label for="name" class="modal-label">Name</label>
+                          <input id="name" class="form-input" type="text" />
+                        </div>
+                        <div>
+                          <label for="email" class="modal-label">Email</label>
+                          <input id="email" class="form-input" type="email" />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li> -->
+          <li>
+            <div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; Login
+                / Sign UP
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Login / Sign UP
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                          >
+                            Sign In
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="pills-profile-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                          >
+                            Sign Up
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="pills-home"
+                          role="tabpanel"
+                          aria-labelledby="pills-home-tab"
+                        >
+                          <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control form-input"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                required
+                              />
+                              <!-- <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                              </div> -->
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control form-input"
+                                id="exampleInputPassword1"
+                                required
+                              />
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-profile"
+                          role="tabpanel"
+                          aria-labelledby="pills-profile-tab"
+                        >
+                          <form>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputUsername1"
+                                class="form-label"
+                                >Username</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control form-input"
+                                id="exampleInputUsername1"
+                                required
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control form-input"
+                                id="exampleInputEmail1"
+                                required
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control form-input"
+                                id="exampleInputPassword1"
+                                required
+                              />
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <!-- <img
+          src="icons/icons-menu.png"
+          alt="menu icon"
+          class="icon-mobile-nav open-icon"
+        /> -->
+        <!-- <img
+          src="icons/icons-close.png"
+          alt="close menu icon"
+          class="icon-mobile-nav close-icon"
+        /> -->
+      </button>
+    </header>
+    <main>
+      <section class="section section-lost" style="margin-top: 9.6rem">
+        <div class="tabbed-container">
+          <div class="tabb-list">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-found-item-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-found-item"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-found-item"
+                  aria-selected="true"
+                >
+                  Report a <span>Found</span> item
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-lost-item-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-lost-item"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-lost-item"
+                  aria-selected="false"
+                >
+                  Report a <span>Lost</span> item
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-found-item"
+              role="tabpanel"
+              aria-labelledby="pills-found-item-tab"
+            >
+              <div class="found-item-form">
+                <form class="form">
+                  <div>
+                    <label class="form-label" for="item-name">Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-name"
+                      placeholder="e.g NIN"
+                    />
+                  </div>
+                  <div>
+                    <label for="date-found" class="form-label">Date</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      required
+                      id="date-found"
+                    />
+                  </div>
+                  <div>
+                    <label class="form-label" for="inputGroupSelect04"
+                      >Choose from the Categories</label
+                    >
+                    <div class="input-group">
+                      <select
+                        class="form-input"
+                        class="form-select"
+                        id="inputGroupSelect04"
+                        aria-label="Choose categories of item"
+                      >
+                        <option selected>Choose...</option>
+                        <option value="Pet">Animals / Pet</option>
+                        <option value="Pet">Bags</option>
+                        <option value="Pet">Clothings</option>
+                        <option value="Pet">Collectors Item</option>
+                        <option value="Pet">Money</option>
+                        <option value="Pet">Documents</option>
+                        <option value="ID Card">ID Card</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Gadgets">Personal Accessories</option>
+                        <option value="Gadgets">Ticket</option>
+                        <option value="Gadgets">Toys</option>
+                        <option value="Wallets">Wallets</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="form-label" for="item-brand">Brand</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-brand"
+                      placeholder="e.g Iphone, Gucci"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <label for="formFile" class="form-label"
+                        >Choose item image</label
+                      >
+                      <input
+                        class="form-input"
+                        class="form-control"
+                        type="file"
+                        id="formFile"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="exampleDataList" class="form-label"
+                      >Location</label
+                    >
+                    <input
+                      class="form-input"
+                      class="form-control"
+                      list="datalistOptions"
+                      id="exampleDataList"
+                      placeholder="Choose one of the three"
+                    />
+                    <datalist id="datalistOptions">
+                      <option value="Idi Oro">Idi Oro</option>
+                      <option value="Fadeyi">Fadeyi</option>
+                      <option value="Ilupeju">Ilupeju</option>
+                    </datalist>
+                  </div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label class="form-label" for="item-colour"
+                      >Primary Colour of Item</label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-colour"
+                      placeholder="e.g Green, Yellow"
+                    />
+                  </div>
+                  <button class="btn-submit">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-lost-item"
+              role="tabpanel"
+              aria-labelledby="pills-lost-item-tab"
+            >
+              <div class="lost-item-form">
+                <form class="form">
+                  <div>
+                    <label class="form-label" for="item-name">Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-name"
+                      placeholder="e.g NIN"
+                    />
+                  </div>
+                  <div>
+                    <label for="date-found" class="form-label">Date</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      required
+                      id="date-found"
+                    />
+                  </div>
+                  <div>
+                    <label class="form-label" for="inputGroupSelect04"
+                      >Choose from the Categories</label
+                    >
+                    <div class="input-group">
+                      <select
+                        class="form-input"
+                        class="form-select"
+                        id="inputGroupSelect04"
+                        aria-label="Choose categories of item"
+                        required
+                      >
+                        <option selected>Choose...</option>
+                        <option value="Pet">Animals / Pet</option>
+                        <option value="Pet">Bags</option>
+                        <option value="Pet">Clothings</option>
+                        <option value="Pet">Collectors Item</option>
+                        <option value="Pet">Money</option>
+                        <option value="Pet">Documents</option>
+                        <option value="ID Card">ID Card</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Gadgets">Personal Accessories</option>
+                        <option value="Gadgets">Ticket</option>
+                        <option value="Gadgets">Toys</option>
+                        <option value="Wallets">Wallets</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="form-label" for="item-brand">Brand</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="item-brand"
+                      placeholder="e.g Iphone, Gucci"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <label for="formFile" class="form-label"
+                        >Choose item image</label
+                      >
+                      <input
+                        class="form-input"
+                        class="form-control"
+                        type="file"
+                        id="formFile"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="exampleDataList" class="form-label"
+                      >Location</label
+                    >
+                    <input
+                      class="form-input"
+                      class="form-control"
+                      list="datalistOptions"
+                      id="exampleDataList"
+                      placeholder="Choose one of the three"
+                      required
+                    />
+                    <datalist id="datalistOptions">
+                      <option value="Idi Oro">Idi Oro</option>
+                      <option value="Fadeyi">Fadeyi</option>
+                      <option value="Ilupeju">Ilupeju</option>
+                    </datalist>
+                  </div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label class="form-label" for="item-colour"
+                      >Primary Colour of Item</label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      required
+                      id="item-colour"
+                      placeholder="e.g Green, Yellow"
+                    />
+                  </div>
+                  <button class="btn-submit" netlify>Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container footer--grid">
+        <div class="logo-col">
+          <div class="footer-logo">
+            <a href="#">
+              <div>
+                <span class="footer-lost">Lost & </span>
+                <span class="footer-found">Found</span>
+              </div>
+            </a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Lost & Found. All right reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <h3 class="header-footer">Contact US</h3>
+          <address class="contact">
+            <p class="address">
+              9 Haruna Street, Fadeyi, Mushin L.G.A., Lagos State
+            </p>
+            <p>
+              <a href="tel:09136936326" class="footer-link">+2349136936326</a>
+            </p>
+            <p>
+              <a href="mailto:hello@lost&found.com" class="footer-link">
+                hello@lost&found.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <h3 class="header-footer">Account</h3>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">Create account</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Sign in</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">IOS app</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Android app</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <h3 class="header-footer">Donation</h3>
+          <ul class="footer-nav">
+            <p class="donation-text">
+              Help donate 🤝 if you want the progress of our project
+            </p>
+            <li>
+              <a class="footer-link" href="#">
+                <button class="btn donation-btn">Donate</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

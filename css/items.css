@@ -1,0 +1,59 @@
+.section {
+  max-width: 96rem;
+}
+
+.tab-pane {
+  font-size: 1.8rem;
+}
+
+.nav-pills {
+  justify-content: space-between;
+  margin-bottom: 2.4em;
+}
+
+.lost-items-box {
+  margin-bottom: 2.4rem;
+}
+
+.search-lost {
+  display: grid;
+  grid-template-columns: 80fr 20fr;
+  gap: 2.4rem;
+}
+
+.lost-search {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #555;
+  /* width: 100%; */
+}
+
+.submit {
+  border: none;
+  background-color: #fa6700;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  transition: all 0.5s;
+}
+
+.submit:hover,
+.submit:active {
+  background-color: #e15d00;
+}
+
+.table {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  /* background-color: rgba(0, 0, 0, 0.0001) !important; */
+  margin-bottom: 1rem;
+}
+
+.table > :not(caption) > * > * {
+  padding: 1.6rem;
+}

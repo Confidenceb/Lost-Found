@@ -2,6 +2,10 @@
   margin-top: 9.6rem;
 }
 
+.lost-list {
+  display: none;
+}
+
 .listing-info-box {
   font-size: 1.6rem;
   font-weight: 600;

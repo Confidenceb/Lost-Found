@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found &mdash; Listings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/claim.css" />
+
+    <script src="js/bootstrap.js" async></script>
+    <script src="js/index.js" async></script>
+    <script src="js/claim.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <div>
+            <span class="lost">Lost & </span> <span class="found">Found</span>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-container">
+        <ul class="main-nav">
+          <!-- <li><a href="#" class="nav-item active--nav-item">HOME</a></li> -->
+          <li>
+            <a href="index.html" class="nav-items">
+              HOME
+              <!-- <i class="fa-solid fa-house"></i> &nbsp; Home -->
+            </a>
+          </li>
+
+          <!-- <li><a href="#" class="nav-items">ABOUT US</a></li> -->
+          <li>
+            <a href="index.html#testimonial" class="nav-items">TESTIMONIAL</a>
+          </li>
+          <li><a href="items.html" class="nav-items">Search items</a></li>
+          <li>
+            <div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; Login
+                / Sign UP
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Login / Sign UP
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul
+                        class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist"
+                      >
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                          >
+                            Sign In
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="pills-profile-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                          >
+                            Sign Up
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="pills-home"
+                          role="tabpanel"
+                          aria-labelledby="pills-home-tab"
+                        >
+                          <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control form-input"
+                                id="exampleInputEmail"
+                                aria-describedby="emailHelp"
+                                required
+                              />
+                              <!-- <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                              </div> -->
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword"
+                                class="form-label form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control form-input"
+                                id="exampleInputPassword"
+                                required
+                              />
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-profile"
+                          role="tabpanel"
+                          aria-labelledby="pills-profile-tab"
+                        >
+                          <form>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputUsername1"
+                                class="form-label"
+                                >Username</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control form-input"
+                                id="exampleInputUsername1"
+                                required
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control form-input"
+                                id="exampleInputEmail1"
+                                required
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control form-input"
+                                id="exampleInputPassword1"
+                                required
+                              />
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <!-- <i class="fa-solid fa-open icon-mobile-nav open-icon"></i>
+        <i class="fa-solid fa-close icon-mobile-nav close-icon"></i> -->
+        <!-- <img
+          src="icons/icons-menu.png"
+          alt="menu icon"
+          class="icon-mobile-nav open-icon"
+        /> -->
+        <!-- <img
+          src="icons/icons-close.png"
+          alt="close menu icon"
+          class="icon-mobile-nav close-icon"
+        /> -->
+      </button>
+    </header>
+    <main>
+      <section class="section section-claim">
+        <h3 class="claim-header header-claim founder">Return item to owner</h3>
+        <h3 class="claim-header header-claim owner">Claim ownership</h3>
+        <div class="send-msg">
+          Send a new message to the listing owner : Mobile Phones, IPhones
+        </div>
+        <div class="msg-container">
+          <form class="form-claim">
+            <div class="title">
+              <label class="label" for="title">Title</label>
+              <input
+                type="text"
+                required
+                id="title"
+                class="title-input"
+                placeholder="Title"
+              />
+            </div>
+            <div class="msg">
+              <label class="label">Message</label>
+              <textarea
+                class="form-control msg-input"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 200px"
+              ></textarea>
+            </div>
+            <div class="btn">
+              <button class="btn-claim">Send message to owner</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container footer--grid">
+        <div class="logo-col">
+          <div class="footer-logo">
+            <a href="#">
+              <div>
+                <span class="footer-lost">Lost & </span>
+                <span class="footer-found">Found</span>
+              </div>
+            </a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Lost & Found. All right reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <h3 class="header-footer">Contact US</h3>
+          <address class="contact">
+            <p class="address">
+              9 Haruna Street, Fadeyi, Mushin L.G.A., Lagos State
+            </p>
+            <p>
+              <a href="tel:09136936326" class="footer-link">+2349136936326</a>
+            </p>
+            <p>
+              <a href="mailto:hello@lost&found.com" class="footer-link">
+                hello@lost&found.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <h3 class="header-footer">Account</h3>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">Create account</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Sign in</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">IOS app</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Android app</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <h3 class="header-footer">Donation</h3>
+          <ul class="footer-nav">
+            <p class="donation-text">
+              Help donate 🤝 if you want the progress of our project
+            </p>
+            <li>
+              <a class="footer-link" href="#">
+                <button class="btn donation-btn">Donate</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

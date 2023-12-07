@@ -63,7 +63,7 @@ const slides = function (slidess, timeOfSlideInSeconds, timeInterval = true) {
 };
 
 slides(heroSlides, 5);
-slides(slidesTestimonial, 2);
+slides(slidesTestimonial, 15);
 
 // Add border bottom to active nav item
 navItem.forEach((nav) => {
